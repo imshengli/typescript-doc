@@ -6,7 +6,7 @@ npm install -g typescript
 
 ### Start
 
-```
+```js
 function greeter(person) {
     return 'Hello, ' + person;
 }
@@ -23,7 +23,7 @@ tsc greeter.ts
 
 ### type
 
-```
+```ts
 function greeter(person: string) {
     return 'Hello, ' + person;
 }
@@ -31,7 +31,7 @@ function greeter(person: string) {
 
 ### interface
 
-```
+```ts
 interface Person {
     firstName: string;
     lastName: string;

@@ -1,6 +1,6 @@
 ## Variable Declarations
 
-#### var
+### var
 
 **Scoping rules**
 
@@ -18,7 +18,7 @@ f(true);  // returns '10'
 f(false); // returns 'undefined'
 ```
 
-#### let
+### let
 
 **Block-scoping**
 
@@ -32,9 +32,9 @@ for (let i = 0; i < 10 ; i++) {
 }
 ```
 
-#### const
+### const
 
-#### Destructuring
+### Destructuring
 
 **Array destructuring**
 
@@ -54,7 +54,7 @@ f(); // ok, default to {a: ""}, which then defaults b = 0
 f({}); // error, 'a' is required if you supply an argument
 ```
 
-#### Spread
+### Spread
 
 ```ts
 let first = [1, 2];

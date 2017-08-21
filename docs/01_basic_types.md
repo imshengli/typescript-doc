@@ -1,12 +1,12 @@
-### Basic Types
+## Basic Types
 
-#### Boolean
+### Boolean
 
 ```ts
 let isDone: boolean = true;
 ```
 
-#### Number
+### Number
 
 ```ts
 let decimal: number = 6;
@@ -15,7 +15,7 @@ let binary: number = 0b1010;
 let octal: number = 0o7dd;
 ```
 
-#### String
+### String
 
 ```ts
 let color: string = "blue";
@@ -32,14 +32,14 @@ let sentence: string = `Hello, my name is ${ fullName }.
 I'll be ${ age + 1 } years old next month.`;
 ```
 
-#### Array
+### Array
 
 ```ts
 let list: number[] = [1, 2, 3];
 let list: Array<number> = [1, 2, 3];
 ```
 
-#### Tuple
+### Tuple
 
 ```ts
 // Declare a tuple type
@@ -56,7 +56,7 @@ console.log(x[5].toString()); // OK, 'string' and 'number' both have 'toString'
 x[6] = true; // Error, 'boolean' isn't 'string | number'
 ```
 
-#### Enum
+### Enum
 
 ```ts
 enum Color {Red, Green, Blue}
@@ -68,7 +68,7 @@ let c: Color = Color.Green;
 let colorName: string = Color[2];
 ```
 
-#### Any
+### Any
 
 ```ts
 let notSure: any = 4;
@@ -79,7 +79,7 @@ let list: any[] = [1, true, "free"];
 list[1] = 100;
 ```
 
-#### void
+### void
 
 ```ts
 function warnUser(): void {
@@ -87,7 +87,7 @@ function warnUser(): void {
 }
 ```
 
-#### Null & Undefined
+### Null & Undefined
 
 ```ts
 // Not much else we can assign to these variables!
@@ -95,7 +95,7 @@ let u: undefined = undefined;
 let n: null = null;
 ```
 
-#### Never
+### Never
 
 ```ts
 // Function returning never must have unreachable end point
@@ -115,7 +115,7 @@ function infiniteLoop(): never {
 }
 ```
 
-#### Type assertions
+### Type assertions
 
 ```ts
 let someValue: any = "this is a string";
@@ -124,22 +124,3 @@ let strLength: number = (<string>someValue).length;
 let someValue: any = "this is a string";
 let strLength: number = (someValue as string).length;
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
